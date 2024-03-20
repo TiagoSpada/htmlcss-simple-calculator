@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcolatrice</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/eurostile-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
 </head>
 <body>
-    
+    <main>
+        <!-- CONTENITORE PER CENTRARE LA CALCOLATRICE -->
+        <div class="dimension d-flex justify-center aling-center">
+            <!-- DIMENSIONI DELLA CALCOLATRICE -->
+            <div class="calculator d-flex column-direction">
+                <!-- PRIMA RIGA CON IL MARCHIO -->
+                <div class="row d-flex">
+                    <div class="brand col-100">BOOSIO</div>
+                </div>
+                <!-- SECONDA RIGA CON IL DISPLAY -->
+                <div class="row d-flex justify-left">
+                    <div class="display col-100">0</div>
+                </div>
+                <!-- TERZA RIGA FORMATA DA 2 COLONNE CON NUMERI E OPERAZIONI -->
+                <div class="row d-flex justify-left">
+                    <!-- COLONNA DI SINISTRA CON I NUMERI -->
+                    <div class="d-flex number col-75 space-around wrap gap-10">
+                        <div class="square-number">7</div>
+                        <div class="square-number">8</div>
+                        <div class="square-number">9</div>
+                        <div class="square-number">4</div>
+                        <div class="square-number">5</div>
+                        <div class="square-number">6</div>
+                        <div class="square-number">1</div>
+                        <div class="square-number">2</div>
+                        <div class="square-number">3</div>
+                        <div class="zero square-number">0</div>
+                        <div class="orange square-number">&#61;</div>
+                    </div>
+                    <!-- COLONNA DI DESTRA CON LE OPERAZIONI -->
+                    <div class="d-flex operation col-25 gap-10 space-around">
+                        <div class="orange square-operation">C</div>
+                        <div class="square-operation">&#43;</div>
+                        <div class="square-operation">&#8722;</div>
+                        <div class="square-operation">&#215;</div>
+                        <div class="square-operation">&#247;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
